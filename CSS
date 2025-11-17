@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* ----------------------- */
+/* GLOBAL */
+/* ----------------------- */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #fff7b3;
+  color: #333;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* ----------------------- */
+/* HEADER */
+/* ----------------------- */
+
+header {
+  background-color: #d5b3ff;
+  padding: 2rem 1rem;
+  border-bottom: 4px solid #a05eff;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* ----------------------- */
+/* Bulle violette */
+/* ----------------------- */
+
+.contenu-centre {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.bulle-page {
+  background-color: #e6ccff;
+  border-radius: 40px;
+  padding: 2rem;
+  max-width: 700px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* ----------------------- */
+/* IMAGES DANS LE FOND JAUNE */
+/* ----------------------- */
+
+.photo-accueil-container,
+.photo-presentation-container,
+.photo-parcours-container,
+.photo-passions-container {
+  margin: 1rem auto 2rem auto;
+}
+
+.photo-accueil,
+.photo-presentation,
+.photo-parcours,
+.photo-passions {
+  border: 6px solid #f7d45a;
+  box-shadow: 0 4px 10p
