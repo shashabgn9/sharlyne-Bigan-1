@@ -23,33 +23,33 @@ header h1 span {
 
 /* Photo accueil */
 .photo-accueil {
-  width: 240px; 
+  width: 350px; 
   border-radius: 20px;
-  border: 6px solid #f7d45a;
+  border: 6px solid #f7d45a; /* JAUNE CLAIR */
   box-shadow: 0 4px 10px rgba(0,0,0,0.20);
   margin-top: 1rem;
   object-fit: cover;
 }
 
-/* Photos internes (agrandies) */
+/* Photos internes (350px) */
 .photo-presentation,
 .photo-parcours,
 .photo-passions {
-  width: 250px;     /* AGRANDIES VISIBLES */
+  width: 350px;     
   border-radius: 20px;
-  border: 6px solid #f7d45a;
+  border: 6px solid #f7d45a; /* JAUNE CLAIR */
   box-shadow: 0 4px 10px rgba(0,0,0,0.20);
   margin-top: 1rem;
   object-fit: cover;
 }
 
-/* VIDEO */
-.video-mcdo {
+/* VIDEO (même jaune que les photos) */
+.video-mcdo.mp4 {
   width: 250px;
   border-radius: 20px;
 
-  /* 🔥 CONTOUR JAUNE FONCÉ */
-  border: 8px solid #cc9a00 !important;
+  /* 🔥 MÊME JAUNE QUE LES PHOTOS */
+  border: 6px solid #f7d45a !important;
 
   box-shadow: 0 4px 25px rgba(0,0,0,0.30);
   margin-top: 1rem;
