@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-/* ----------------------- */
 /* GLOBAL */
-/* ----------------------- */
-
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -12,10 +9,7 @@ body {
   text-align: center;
 }
 
-/* ----------------------- */
 /* HEADER */
-/* ----------------------- */
-
 header {
   background-color: #d5b3ff;
   padding: 2rem 1rem;
@@ -25,39 +19,46 @@ header h1 span {
   color: #7b3df0;
 }
 
-/* ----------------------- */
 /* IMAGES */
-/* ----------------------- */
-
-/* Photo d'accueil (taille normale) */
 .photo-accueil {
-  width: 180px;
-  max-width: 60vw;
+  width: 200px;
   border-radius: 20px;
   border: 6px solid #f7d45a;
   box-shadow: 0 4px 10px rgba(0,0,0,0.20);
-  margin-top: 1rem;
-  object-fit: cover;
 }
 
-/* 4 autres photos (taille réduite) */
+/* 4 photos internes (plus grandes que 140px) */
 .photo-presentation,
 .photo-parcours,
-.photo-passions,
-.photo-contact {
-  width: 140px;             /* 🔥 taille réduite */
-  max-width: 50vw;
+.photo-passions {
+  width: 170px;
   border-radius: 20px;
   border: 6px solid #f7d45a;
   box-shadow: 0 4px 10px rgba(0,0,0,0.20);
-  margin-top: 1rem;
   object-fit: cover;
 }
 
-/* ----------------------- */
-/* CERCLES CLIQUABLES */
-/* ----------------------- */
+/* VIDEO McDo */
+.video-mcdo {
+  width: 170px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.20);
+}
 
+/* Mise en page photo + vidéo */
+.bloc-parcours {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.colonne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CERCLES CLIQUABLES */
 .cercles {
   display: flex;
   justify-content: center;
@@ -69,41 +70,28 @@ header h1 span {
 .cercle {
   width: 180px;
   height: 180px;
-  background-color: #e6ccff;      /* fond violet clair */
-  border: 6px solid #a05eff;      /* contour violet foncé */
+  background-color: #e6ccff;
+  border: 6px solid #a05eff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-
   color: #4a2c8a;
   font-weight: 600;
   font-size: 1.2rem;
   text-decoration: none;
   text-align: center;
-
   padding: 0 12px;
   overflow-wrap: break-word;
-
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 .cercle:hover {
   transform: scale(1.10);
   box-shadow: 0 8px 18px rgba(0,0,0,0.20);
 }
 
-/* ----------------------- */
-/* BULLES PAGE INTERNE */
-/* ----------------------- */
-
-.contenu-centre {
-  display: flex;
-  justify-content: center;
-  padding: 2rem 1rem;
-}
-
+/* BULLES */
 .bulle-page {
   background-color: #e6ccff;
   border-radius: 40px;
@@ -111,17 +99,11 @@ header h1 span {
   max-width: 700px;
   margin: 2rem auto;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  text-align: left;
-  line-height: 1.6;
 }
 
-/* ----------------------- */
 /* FOOTER */
-/* ----------------------- */
-
 footer {
   padding: 1rem;
   background-color: #f3e0ff;
   border-top: 3px solid #a05eff;
-  font-size: 0.9rem;
 }
