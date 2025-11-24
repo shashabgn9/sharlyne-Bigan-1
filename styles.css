@@ -19,7 +19,7 @@ header h1 span {
   color: #7b3df0;
 }
 
-/* IMAGES (réduites) */
+/* IMAGES (toutes à la même taille) */
 .photo-accueil,
 .photo-presentation,
 .photo-parcours,
@@ -30,6 +30,7 @@ header h1 span {
   border: 6px solid #f7d45a;
   box-shadow: 0 4px 10px rgba(0,0,0,0.20);
   margin-top: 1rem;
+  object-fit: cover;
 }
 
 /* CERCLES CLIQUABLES */
@@ -80,5 +81,5 @@ header h1 span {
 footer {
   padding: 1rem;
   background-color: #f3e0ff;
-  border-top: 3px solid #a05eff;
+  border-top: 3px solid #a05eff);
 }
