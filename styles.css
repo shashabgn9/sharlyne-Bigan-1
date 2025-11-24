@@ -1,103 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-/* ----------------------- */
 /* GLOBAL */
-/* ----------------------- */
-
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  background-color: #fff7b3; /* jaune clair */
+  background-color: #fff7b3;
   color: #333;
   text-align: center;
 }
 
-/* ----------------------- */
 /* HEADER */
-/* ----------------------- */
-
 header {
   background-color: #d5b3ff;
   padding: 2rem 1rem;
   border-bottom: 4px solid #a05eff;
 }
-
-header h1 {
-  margin: 0;
-  font-size: 1.8rem;
-}
-
 header h1 span {
   color: #7b3df0;
-  font-weight: 600;
 }
 
-/* ----------------------- */
-/* PHOTO D’ACCUEIL */
-/* ----------------------- */
-
-.photo-accueil-container {
-  margin: 1.5rem 0;
-}
-
-.photo-accueil {
-  width: 260px;
-  max-width: 80vw;
+/* IMAGES (réduites) */
+.photo-accueil,
+.photo-presentation,
+.photo-parcours,
+.photo-passions {
+  width: 180px;
+  max-width: 60vw;
   border-radius: 20px;
   border: 6px solid #f7d45a;
   box-shadow: 0 4px 10px rgba(0,0,0,0.20);
+  margin-top: 1rem;
 }
 
-/* ----------------------- */
-/* SECTION DES CERCLES */
-/* ----------------------- */
-
+/* CERCLES CLIQUABLES */
 .cercles {
   display: flex;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 3rem;
   flex-wrap: wrap;
   padding: 2rem 1rem 3rem;
 }
 
-/* 🔵 CERCLE CLIQUABLE */
 .cercle {
-  width: 150px;
-  height: 150px;
-
-  background-color: #e6ccff;      /* VIOLET CLAIR */
-  border: 5px solid #a05eff;      /* CONTOUR VIOLET FONCÉ */
-
-  border-radius: 50%;             /* cercle parfait */
-
+  width: 180px;
+  height: 180px;
+  background-color: #e6ccff;
+  border: 6px solid #a05eff;
+  border-radius: 50%;
   display: flex;
-  align-items: center;            /* centre vertical */
-  justify-content: center;        /* centre horizontal */
-
-  text-decoration: none;
-  color: #4a2c8a;                 /* texte violet foncé lisible */
+  align-items: center;
+  justify-content: center;
+  color: #4a2c8a;
   font-weight: 600;
-  font-size: 1.15rem;
-
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-size: 1.2rem;
+  text-decoration: none;
   text-align: center;
-
-  padding: 0 12px;                /* évite que ça dépasse */
+  padding: 0 12px;
   overflow-wrap: break-word;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Zoom au survol */
 .cercle:hover {
-  transform: scale(1.08);
+  transform: scale(1.10);
   box-shadow: 0 8px 18px rgba(0,0,0,0.20);
 }
 
-/* ----------------------- */
-/* BULLES VIOLETTES POUR LES AUTRES PAGES */
-/* ----------------------- */
-
+/* BULLES PAGE INTERNE */
 .bulle-page {
   background-color: #e6ccff;
   border-radius: 40px;
@@ -107,13 +76,9 @@ header h1 span {
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-/* ----------------------- */
 /* FOOTER */
-/* ----------------------- */
-
 footer {
   padding: 1rem;
   background-color: #f3e0ff;
   border-top: 3px solid #a05eff;
-  font-size: 0.9rem;
 }
