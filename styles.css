@@ -7,10 +7,9 @@
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  background-color: #fff7b3;
+  background-color: #fff7b3; /* jaune clair */
   color: #333;
   text-align: center;
-  overflow-x: hidden;
 }
 
 /* ----------------------- */
@@ -25,40 +24,96 @@ header {
 
 header h1 {
   margin: 0;
+  font-size: 1.8rem;
+}
+
+header h1 span {
+  color: #7b3df0;
+  font-weight: 600;
 }
 
 /* ----------------------- */
-/* Bulle violette */
+/* PHOTO D’ACCUEIL */
 /* ----------------------- */
 
-.contenu-centre {
+.photo-accueil-container {
+  margin: 1.5rem 0;
+}
+
+.photo-accueil {
+  width: 260px;
+  max-width: 80vw;
+  border-radius: 20px;
+  border: 6px solid #f7d45a;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.20);
+}
+
+/* ----------------------- */
+/* SECTION DES CERCLES */
+/* ----------------------- */
+
+.cercles {
   display: flex;
   justify-content: center;
-  padding: 2rem 1rem;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  padding: 2rem 1rem 3rem;
 }
+
+/* 🔵 CERCLE CLIQUABLE */
+.cercle {
+  width: 150px;
+  height: 150px;
+
+  background-color: #e6ccff;      /* VIOLET CLAIR */
+  border: 5px solid #a05eff;      /* CONTOUR VIOLET FONCÉ */
+
+  border-radius: 50%;             /* cercle parfait */
+
+  display: flex;
+  align-items: center;            /* centre vertical */
+  justify-content: center;        /* centre horizontal */
+
+  text-decoration: none;
+  color: #4a2c8a;                 /* texte violet foncé lisible */
+  font-weight: 600;
+  font-size: 1.15rem;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+
+  padding: 0 12px;                /* évite que ça dépasse */
+  overflow-wrap: break-word;
+}
+
+/* Zoom au survol */
+.cercle:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.20);
+}
+
+/* ----------------------- */
+/* BULLES VIOLETTES POUR LES AUTRES PAGES */
+/* ----------------------- */
 
 .bulle-page {
   background-color: #e6ccff;
   border-radius: 40px;
   padding: 2rem;
   max-width: 700px;
+  margin: 2rem auto;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 /* ----------------------- */
-/* IMAGES DANS LE FOND JAUNE */
+/* FOOTER */
 /* ----------------------- */
 
-.photo-accueil-container,
-.photo-presentation-container,
-.photo-parcours-container,
-.photo-passions-container {
-  margin: 1rem auto 2rem auto;
+footer {
+  padding: 1rem;
+  background-color: #f3e0ff;
+  border-top: 3px solid #a05eff;
+  font-size: 0.9rem;
 }
-
-.photo-accueil,
-.photo-presentation,
-.photo-parcours,
-.photo-passions {
-  border: 6px solid #f7d45a;
-  box-shadow: 0 4px 10p
