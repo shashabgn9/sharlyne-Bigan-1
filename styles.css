@@ -20,35 +20,38 @@ header h1 span {
 }
 
 /* IMAGES */
+
+/* Photo accueil */
 .photo-accueil {
-  width: 220px;
-  max-width: 80vw;
+  width: 240px; 
   border-radius: 20px;
   border: 6px solid #f7d45a;
   box-shadow: 0 4px 10px rgba(0,0,0,0.20);
-  object-fit: cover;
   margin-top: 1rem;
+  object-fit: cover;
 }
 
 /* Photos internes (agrandies) */
 .photo-presentation,
 .photo-parcours,
 .photo-passions {
-  width: 230px;             /* AGRANDIES */
-  max-width: 80vw;
+  width: 250px;     /* AGRANDIES VISIBLES */
   border-radius: 20px;
   border: 6px solid #f7d45a;
   box-shadow: 0 4px 10px rgba(0,0,0,0.20);
-  object-fit: cover;
   margin-top: 1rem;
+  object-fit: cover;
 }
 
 /* VIDEO */
 .video-mcdo {
-  width: 230px;             /* même taille que la photo */
+  width: 250px;
   border-radius: 20px;
-  border: 6px solid #cc9a00; /* CONTOUR JAUNE FONCÉ */
-  box-shadow: 0 4px 15px rgba(0,0,0,0.30);
+
+  /* 🔥 CONTOUR JAUNE FONCÉ */
+  border: 8px solid #cc9a00 !important;
+
+  box-shadow: 0 4px 25px rgba(0,0,0,0.30);
   margin-top: 1rem;
 }
 
@@ -56,7 +59,7 @@ header h1 span {
 .bloc-parcours {
   display: flex;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 3rem;
   margin-bottom: 2rem;
 }
 .colonne {
@@ -71,7 +74,7 @@ header h1 span {
   justify-content: center;
   gap: 3rem;
   flex-wrap: wrap;
-  padding: 2rem 1rem 3rem;
+  padding: 2rem 1rem;
 }
 
 .cercle {
@@ -98,13 +101,7 @@ header h1 span {
   box-shadow: 0 8px 18px rgba(0,0,0,0.20);
 }
 
-/* BULLES PAGES INTERNES */
-.contenu-centre {
-  display: flex;
-  justify-content: center;
-  padding: 2rem 1rem;
-}
-
+/* BULLES */
 .bulle-page {
   background-color: #e6ccff;
   border-radius: 40px;
