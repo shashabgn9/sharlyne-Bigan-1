@@ -44,7 +44,7 @@ header h1 span {
 
 /* 🔥 Photo parcours SEULEMENT → 400px */
 .photo-parcours {
-  width: 400px;
+  width: 500px;
   border-radius: 20px;
   border: 6px solid #f7d45a;
   box-shadow: 0 4px 10px rgba(0,0,0,0.20);
@@ -54,7 +54,7 @@ header h1 span {
 
 /* VIDEO (reste à 250px) */
 .video-mcdo {
-  width: 250px;
+  width: 150px;
   border-radius: 20px;
 
   /* Contour jaune clair identique aux photos */
