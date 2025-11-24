@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-/* ----------------------- */
 /* GLOBAL */
-/* ----------------------- */
-
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -12,62 +9,55 @@ body {
   text-align: center;
 }
 
-/* ----------------------- */
 /* HEADER */
-/* ----------------------- */
-
 header {
   background-color: #d5b3ff;
   padding: 2rem 1rem;
   border-bottom: 4px solid #a05eff;
 }
-
 header h1 span {
   color: #7b3df0;
 }
 
-/* ----------------------- */
 /* IMAGES */
-/* ----------------------- */
-
-/* Photo d'accueil : légèrement plus grande */
 .photo-accueil {
-  width: 220px;               /* 🔥 agrandie légèrement */
-  max-width: 70vw;
+  width: 220px;
+  max-width: 80vw;
   border-radius: 20px;
   border: 6px solid #f7d45a;
   box-shadow: 0 4px 10px rgba(0,0,0,0.20);
-  margin-top: 1rem;
   object-fit: cover;
+  margin-top: 1rem;
 }
 
-/* Les 4 autres images : un peu plus grandes aussi */
+/* Photos internes (agrandies) */
 .photo-presentation,
 .photo-parcours,
 .photo-passions {
-  width: 180px;              /* 🔥 légèrement plus grand */
-  max-width: 70vw;
+  width: 230px;             /* AGRANDIES */
+  max-width: 80vw;
   border-radius: 20px;
   border: 6px solid #f7d45a;
   box-shadow: 0 4px 10px rgba(0,0,0,0.20);
-  margin-top: 1rem;
   object-fit: cover;
-}
-
-/* Vidéo McDo */
-.video-mcdo {
-  width: 180px;             /* même taille que l’image à côté */
-  border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.20);
   margin-top: 1rem;
 }
 
-/* Alignement image + vidéo dans Parcours */
+/* VIDEO */
+.video-mcdo {
+  width: 230px;             /* même taille que la photo */
+  border-radius: 20px;
+  border: 6px solid #cc9a00; /* CONTOUR JAUNE FONCÉ */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.30);
+  margin-top: 1rem;
+}
+
+/* Mise en page image + vidéo */
 .bloc-parcours {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  margin-bottom: 1.5rem;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
 }
 .colonne {
   display: flex;
@@ -75,10 +65,7 @@ header h1 span {
   align-items: center;
 }
 
-/* ----------------------- */
 /* CERCLES CLIQUABLES */
-/* ----------------------- */
-
 .cercles {
   display: flex;
   justify-content: center;
@@ -90,36 +77,28 @@ header h1 span {
 .cercle {
   width: 180px;
   height: 180px;
-  background-color: #e6ccff;      /* violet clair */
-  border: 6px solid #a05eff;      /* contour violet foncé */
-
+  background-color: #e6ccff;
+  border: 6px solid #a05eff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-
   color: #4a2c8a;
   font-weight: 600;
   font-size: 1.2rem;
   text-decoration: none;
   text-align: center;
-
   padding: 0 12px;
   overflow-wrap: break-word;
-
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: .2s;
 }
-
 .cercle:hover {
   transform: scale(1.10);
   box-shadow: 0 8px 18px rgba(0,0,0,0.20);
 }
 
-/* ----------------------- */
-/* BULLES DES PAGES INTERNES */
-/* ----------------------- */
-
+/* BULLES PAGES INTERNES */
 .contenu-centre {
   display: flex;
   justify-content: center;
@@ -137,13 +116,9 @@ header h1 span {
   line-height: 1.6;
 }
 
-/* ----------------------- */
 /* FOOTER */
-/* ----------------------- */
-
 footer {
   padding: 1rem;
   background-color: #f3e0ff;
   border-top: 3px solid #a05eff;
-  font-size: 0.9rem;
 }
