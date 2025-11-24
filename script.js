@@ -2,7 +2,7 @@
 
 console.log("✨ Site personnel chargé !");
 
-// Effet au clic sur les nuages
+// Effet au clic sur les bulles/nuages
 document.querySelectorAll('.nuage').forEach(n => {
   n.addEventListener('mousedown', () => n.style.transform = "scale(0.95)");
   n.addEventListener('mouseup', () => n.style.transform = "scale(1)");
